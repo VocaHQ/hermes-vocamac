@@ -1,0 +1,28 @@
+name: vocamac
+version: 0.1.0
+manifest_version: 2
+api_version: 1
+description: "On-device speech-to-text with VocaMac on Apple Silicon Macs: transcribes voice messages and audio/video files privately, with no cloud API key."
+author: VocaHQ
+license: MIT
+homepage: https://github.com/VocaHQ/hermes-vocamac
+tags: [stt, speech-to-text, transcription, voice, macos, on-device, local]
+provides_tools:
+  - vocamac_transcribe
+  - vocamac_list_models
+config_schema:
+  binary:
+    type: str
+    default: ""
+    label: "VocaMac executable"
+    description: "Leave blank to find /Applications/VocaMac.app automatically."
+  model:
+    type: str
+    default: ""
+    label: "Speech model"
+    description: "A downloaded VocaMac model id, e.g. parakeet-tdt-0.6b-v2. Leave blank to use the model selected in VocaMac."
+  timeout:
+    type: int
+    default: 600
+    label: "Timeout (seconds)"
+    description: "How long one transcription may take before it is stopped."
