@@ -89,4 +89,4 @@ The tests use a fake VocaMac executable, so they don't need the app or a model.
 
 ## License
 
-MIT. VocaMac itself is AGPL-3.0 and is installed separately.
+[AGPL-3.0](LICENSE), the same as VocaMac.

@@ -4,7 +4,7 @@ manifest_version: 2
 api_version: 1
 description: "On-device speech-to-text with VocaMac on Apple Silicon Macs: transcribes voice messages and audio/video files privately, with no cloud API key."
 author: VocaHQ
-license: MIT
+license: AGPL-3.0
 homepage: https://github.com/VocaHQ/hermes-vocamac
 tags: [stt, speech-to-text, transcription, voice, macos, on-device, local]
 provides_tools:
