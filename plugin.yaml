@@ -16,7 +16,7 @@ config_schema:
     default: ""
     label: "VocaMac executable"
     description: "Leave blank to find /Applications/VocaMac.app automatically."
-  model:
+  speech_model:
     type: str
     default: ""
     label: "Speech model"

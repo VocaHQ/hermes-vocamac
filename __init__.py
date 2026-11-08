@@ -76,7 +76,7 @@ class _Settings:
 
     @property
     def model(self) -> Optional[str]:
-        return self.get("model")
+        return self.get("speech_model")
 
     @property
     def timeout(self) -> float:

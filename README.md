@@ -42,11 +42,11 @@ Everything is optional. Set these in the desktop app under **Settings → Plugin
 | Setting | Default | Meaning |
 |---|---|---|
 | `binary` | auto | Path to the VocaMac executable. By default the plugin looks at `$VOCAMAC_BINARY`, `/Applications/VocaMac.app`, `~/Applications/VocaMac.app`, then `vocamac` on `PATH`. |
-| `model` | the app's model | A downloaded VocaMac model id, such as `parakeet-tdt-0.6b-v2`. `vocamac_list_models` shows them. |
+| `speech_model` | the app's model | A downloaded VocaMac model id, such as `parakeet-tdt-0.6b-v2`. `vocamac_list_models` shows them. |
 | `timeout` | `600` | Seconds one transcription may take. |
 
 ```bash
-hermes config set plugins.entries.vocamac.settings.model parakeet-tdt-0.6b-v2
+hermes config set plugins.entries.vocamac.settings.speech_model parakeet-tdt-0.6b-v2
 ```
 
 The language hint comes from Hermes (`stt.language`, or `stt.vocamac.language`). Leave it blank, or set it to `auto`, to let VocaMac detect the language.
