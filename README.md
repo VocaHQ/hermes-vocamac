@@ -65,7 +65,7 @@ Each request starts a new VocaMac process, so a large model takes a moment to lo
 
 ### Without the plugin
 
-If you'd rather not install a plugin, Hermes's command providers can call VocaMac directly. This needs VocaMac's `--text` output, or `jq` on older versions:
+If you'd rather not install a plugin, a Hermes command provider can call VocaMac directly. This uses VocaMac's `--text` and `--output` options, which arrive in the release after 1.2.0. On 1.2.0, use `--transcribe-file {input_path} --json | jq -r .text > {output_path}` instead:
 
 ```yaml
 stt:
